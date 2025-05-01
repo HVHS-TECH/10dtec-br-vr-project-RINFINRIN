@@ -5,7 +5,7 @@
 <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
 <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> 
 
-  </head>AshleyBDBird
+  </head>
     <body>
     <a-scene>
       <a-sky color="lightblue"></a-sky>
@@ -21,9 +21,7 @@
       ply-model="src:vr thing-1.ply"
       position="0 0 0"
       rotation="-90 0 0"
-        animation="
-          property: position
-          from
+
       ></a-entity>
 
       <a-entity 
@@ -36,6 +34,14 @@
       ply-model="src:vr thing-3.ply"
       position="0 0 0"
       rotation="-90 0 0"
+        animation="
+          property: position;
+          from: -4 0 -4;
+          to: 4 0 -4;
+          dur: 2000;
+          loop: true;
+          dir:alternative
+          "
       ></a-entity>
 
       <a-entity 
